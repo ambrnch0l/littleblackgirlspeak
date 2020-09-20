@@ -92,7 +92,18 @@ img {
 
 
 input {
-
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-family: var(--body-fonts);
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: fit-content;
+    transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    padding: 4px 20px;
 }
 
 input:hover {
