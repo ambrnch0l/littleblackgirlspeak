@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <h1 class="logo"></h1>
+    
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    <nav>
+      <ul>
+        <li><a href="about.html">❣️ About</a></li>
+        <li><a href="index.html">🎧 Listen</a></li>
+        <li><a href="buy-poster.html" target="blank">💵 Buy</a></li>
+      </ul>
+    </nav>
+    <hr>
+    <br>
+    <Br>
+    <img src="assets/lbgs-title.svg" width="75%" ></img>
+    <title>Little Black Girl Speak</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </header>
+  <body>
+      <!--black girl speak photo and buttons-->
+    <div class="container">
+        <img src="assets/IMG.png"></img>
+<audio id="audio1" src="http://www.music.helsinki.fi/tmt/opetus/uusmedia/esim/a2002011001-e02-8kHz.wav" preload="auto"></audio>
+<audio id="audio2" src="Chinamere_lbgs.wav" preload="auto"></audio>
+<audio id="audio2" src="Chinamere_lbgs.wav" preload="auto"></audio>
+<audio id="audio2" src="Chinamere_lbgs.wav" preload="auto"></audio>
+<audio id="audio2" src="Chinamere_lbgs.wav" preload="auto"></audio>
+<audio id="audio2" src="Chinamere_lbgs.wav" preload="auto"></audio>
+<audio id="audio2" src="Chinamere_lbgs.wav" preload="auto"></audio>
+<input id="stopButton" type="button" value="Stop All Audio" />
+<hr>
+<button class="playSound" data-sound="audio1">❣️ Love<https://jsfiddle.net/nerdvoso/46f7rxbs/46/#/button>
+<button class="playSound" data-sound="audio2">Power<https://jsfiddle.net/nerdvoso/46f7rxbs/46/#/button>
+<button class="playSound" data-sound="audio2">💅🏾 Bad Bitch<https://jsfiddle.net/nerdvoso/46f7rxbs/46/#/button>
+<button class="playSound" data-sound="audio2">Periodt<https://jsfiddle.net/nerdvoso/46f7rxbs/46/#/button>
+<button class="playSound" data-sound="audio2">🗣 Pop Yo Shit<https://jsfiddle.net/nerdvoso/46f7rxbs/46/#/button>
+<button class="playSound" data-sound="audio2">Power<https://jsfiddle.net/nerdvoso/46f7rxbs/46/#/button>
+<button class="playSound" data-sound="audio2">Bad Bitch<https://jsfiddle.net/nerdvoso/46f7rxbs/46/#/button>
+<button class="playSound" data-sound="audio2">Periodt<https://jsfiddle.net/nerdvoso/46f7rxbs/46/#/button>
+<button class="playSound" data-sound="audio2">Pop Yo Shit<https://jsfiddle.net/nerdvoso/46f7rxbs/46/#/button>
+    <script>
+        var playSoundBtn = document.getElementsByClassName("playSound");
+    
+            var playSound = function() {
+                var attribute = this.getAttribute("data-sound");
+                var sounds = document.getElementsByTagName('audio');
+                  for(i=0; i<sounds.length; i++){
+                    sounds[i].pause();
+                    sounds[i].currentTime = 0;
+                }
+                document.getElementById(attribute).play();
+            };
+            
+            for (var i = 0; i < playSoundBtn.length; i++) {
+                playSoundBtn[i].addEventListener('click', playSound, false);
+            }
+
+    document.getElementById('stopButton').onclick = function() {
+  var sounds = document.getElementsByTagName('audio');
+  for(i=0; i<sounds.length; i++) sounds[i].pause();
+};
+     </script>
+</div>
+<!--end black girl speak photo and buttons-->
+
+  </body>
+</html>
+
