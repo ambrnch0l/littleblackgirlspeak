@@ -55,7 +55,7 @@ body {
    }
 
 .container {
- position: absolute;
+ position: fixed;
  top: 100px;
  bottom: 100px;
  left: 75px;
